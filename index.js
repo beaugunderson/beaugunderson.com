@@ -4,6 +4,12 @@
 
 var emoji;
 
+function commafy(i) {
+  return i.toString().replace(/(^|[^\w.])(\d{4,})/g, function($0, $1, $2) {
+    return $1 + $2.replace(/\d(?=(?:\d\d\d)+(?!\d))/g, '$&,');
+  });
+}
+
 function htmlEncode(html) {
   return document.createElement('a').appendChild(
     document.createTextNode(html)).parentNode.innerHTML;
@@ -68,6 +74,8 @@ function addRepositories(repositories) {
   $('#total-projects').text(repositories.total + ' projects');
 
   $('.projects').html('');
+
+  $('#commits').text('(' + commafy(repositories.totalCommits) + ' commits)');
 
   $('#own-projects').text(repositories.sourcesTotal);
   $('#contributed-projects').text(repositories.forksTotal);
