@@ -1,0 +1,125 @@
+* {
+   text-rendering: optimizeLegibility;
+}
+
+body {
+   padding-left: 4em;
+   padding-top: 2em;
+   padding-bottom: 2em;
+   padding-right: 5em;
+   font-family: "Museo300";
+   font-size: 1.5em;
+}
+
+ul {
+   list-style-type: none;
+}
+
+ul.links > li {
+   line-height: 1.5em;
+}
+
+ul.links > li span {
+   vertical-align: middle;
+   font-size: 0.65em;
+   background-color: #aaa;
+   color: white;
+   padding: 2px;
+}
+
+h1 {
+   background-color: #cc0000;
+   color: white;
+   padding: 0.1em;
+   display: inline-block;
+   margin-bottom: 0;
+}
+
+h1 span:hover,
+h2 span:hover,
+h3 span:hover {
+   background-color: #cc0000;
+   color: white;
+}
+
+h1, h2, h3 {
+   font-family: "MuseoSlab500";
+}
+
+*::selection {
+   background: #cc0000;
+   color: #fff;
+}
+
+a {
+   color: #cc0000;
+   text-decoration: none;
+   padding: 2px;
+}
+
+a:visited {
+   color: #aaa;
+}
+
+a:hover {
+   background-color: #cc0000;
+   color: white;
+}
+
+ul.links > li:hover span {
+   color: white;
+   background-color: #cc0000;
+}
+
+.language {
+  width: 300px;
+  display: inline-block;
+  text-align: right;
+}
+
+.projects > li {
+  margin-left: -150px;
+}
+
+.projects li {
+  line-height: 0.9em;
+  margin-bottom: 1em;
+  vertical-align: top;
+}
+
+.projects .list {
+  font-size: 0.7em;
+  margin: 0;
+  margin-top: 1em;
+  padding: 0;
+}
+
+.projects .list li {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.projects .list li strong {
+  display: inline-block;
+  text-align: right;
+  width: 300px;
+  margin-right: 0.5em;
+}
+
+p > small {
+  margin-left: 0;
+}
+
+small {
+   color: #999;
+   margin-left: 0.25em;
+}
+
+.projects strong {
+   margin-right: 0.25em;
+}
+
+ul.projects li.loading {
+  margin-left: 0;
+}
