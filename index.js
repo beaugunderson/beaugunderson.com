@@ -97,6 +97,10 @@ $(function () {
     $('#unread').text(result.unread);
   });
 
+  $.getJSON('/status/tabs/', function (result) {
+    $('#tabs').text(result.tabs);
+  });
+
   $.getJSON('/status/github/', function (json) {
     addRepositories(json);
   });

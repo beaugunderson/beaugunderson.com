@@ -11,6 +11,10 @@ body {
    font-size: 1.5em;
 }
 
+#twitter-button {
+  float: right;
+}
+
 ul {
    list-style-type: none;
 }
